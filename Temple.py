@@ -2,7 +2,7 @@ import turtle
 
 # Set up the turtle screen
 screen = turtle.Screen()
-screen.bgcolor("skyblue")
+screen.bgcolor("#102b0c")
 
 # Create a turtle object for drawing
 temple = turtle.Turtle()
@@ -61,14 +61,14 @@ def draw_roof():
 # Function to draw the entrance
 def draw_entrance():
     temple.penup()
-    temple.goto(-60, -100)
+    temple.goto(-70, -100)
     temple.pendown()
     draw_rectangle(120, 80, "brown")
 
 # Function to draw temple dome
 def draw_dome():
     temple.penup()
-    temple.goto(-50, 50)
+    temple.goto(-10, 50)
     temple.pendown()
     temple.fillcolor("yellow")
     temple.begin_fill()
@@ -79,16 +79,16 @@ def draw_dome():
 def add_text():
     # Title
     temple.penup()
-    temple.goto(0, 200)
+    temple.goto(-300, 300)
     temple.pendown()
     temple.color("darkblue")
-    temple.write("Temple Design", align="center", font=("Arial", 24, "bold"))
+    temple.write("Temple", align="center", font=("Arial", 24, "bold"))
     
     # Description text
     temple.penup()
     temple.goto(0, -180)
     temple.pendown()
-    temple.color("black")
+    temple.color("white")
     temple.write("Created by AP", align="center", font=("Arial", 16, "normal"))
 
 # Draw temple step by step
